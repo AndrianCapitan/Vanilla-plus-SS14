@@ -1,0 +1,44 @@
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackDuffelEternalHecu
+  suffix: Eternal
+  name: Вещевой мешок HECU
+  description: Большое хранилище для HECU
+  components:
+  - type: Sprite
+    sprite: /Textures/_Eternal/People/Clothing/Back/Backpack/Vem.rsi
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,7,4
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackSatchelEternalHECU
+  suffix: Eternal
+  name: Мешок
+  description: Мешок для HECU
+  components:
+  - type: Sprite
+    sprite: /Textures/_Eternal/People/Clothing/Back/Backpack/Sumka.rsi
+  - type: Storage
+    grid:
+    - 0,0,1,3
+    - 3,0,6,3
+    - 8,0,9,3
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackLightHECU
+  suffix: Eternal
+  name: Легкий Рюкзак HECU
+  description: Легкий рюкзак HECU, почти не замедляет
+  components:
+  - type: Sprite
+    sprite: /Textures/_Eternal/People/Clothing/Back/Backpack/Backlight.rsi
+
+  
