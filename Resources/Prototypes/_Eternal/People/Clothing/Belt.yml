@@ -1,0 +1,11 @@
+- type: entity
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  suffix: Eternal
+  id: ClothingBeltWebbingEternalHECU
+  name: РПС HECU
+  description: Ременно Плечевая Системя для хранения вещей
+  components:
+  - type: Sprite
+    sprite: /Textures/_Eternal/People/Clothing/Belt/Webbing/Voen.rsi
+  - type: Clothing
+    sprite: /Textures/_Eternal/People/Clothing/Belt/Webbing/Voen.rsi

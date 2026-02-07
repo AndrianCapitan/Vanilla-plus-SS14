@@ -1,0 +1,23 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandHecuNitril
+  suffix: Eternal
+  name: Биохимические перчатки
+  description: Перчатки для био защиты
+  components:
+  - type: Sprite
+    sprite: /Textures/_Eternal/People/Clothing/Hand/Nitril.rsi
+  - type: Clothing
+    sprite: /Textures/_Eternal/People/Clothing/Hand/Nitril.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandHecuVoen
+  suffix: Eternal
+  name: Боевые перчатки
+  description: Боевые перчатки HECU
+  components:
+  - type: Sprite
+    sprite: /Textures/_Eternal/People/Clothing/Hand/Voen.rsI
+  - type: Clothing
+    sprite: /Textures/_Eternal/People/Clothing/Hand/Voen.rsI

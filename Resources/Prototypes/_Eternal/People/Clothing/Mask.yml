@@ -1,0 +1,13 @@
+- type: entity
+  parent: [ ClothingMaskGasAtmos ]
+  id: ClothingMaskGasEternalHECUProtivogas
+  suffix: Eternal
+  name: Противогаз HECU
+  description: Противогаз, для защиты от вредных газов. Имеет разъем под баллон.
+  components:
+  - type: Sprite
+    sprite: /Textures/_Eternal/People/Clothing/Mask/Protivogas.rsi
+  - type: Clothing
+    sprite: /Textures/_Eternal/People/Clothing/Mask/Protivogas.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
