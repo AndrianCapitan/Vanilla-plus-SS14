@@ -1,0 +1,59 @@
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetEternalHECUAlt
+  suffix: Eternal
+  abstract: true
+  name: quartermaster's over-ear headset
+  components:
+  - type: Sprite
+    sprite: /Textures/_Eternal/People/Clothing/Ears/HECU.rsi
+  - type: Clothing
+    sprite: /Textures/_Eternal/People/Clothing/Ears/HECU.rsi
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - HECUBaseRadioKey
+
+- type: entity
+  parent: ClothingHeadsetEternalHECUAlt
+  id: ClothingHeadsetEternalHECU
+  name: Гарнитура Морпеха
+  suffix: Eternal
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - HECUBaseRadioKey
+
+- type: entity
+  parent: ClothingHeadsetEternalHECUAlt
+  id: ClothingHeadsetEternalHECUCargo
+  name: Гарнитура Снабжения
+  suffix: Eternal
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - HECUCargoRadioKey
+
+- type: entity
+  parent: ClothingHeadsetEternalHECUAlt
+  id: ClothingHeadsetEternalHECUArta
+  name: Гарнитура Поддержки
+  suffix: Eternal
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - HECUArtaRadioKey
+
+- type: entity
+  parent: ClothingHeadsetEternalHECUAlt
+  id: ClothingHeadsetEternalHECUCommand
+  name: Гарнитура Командования
+  suffix: Eternal
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - HECUCommandFullRadioKey
