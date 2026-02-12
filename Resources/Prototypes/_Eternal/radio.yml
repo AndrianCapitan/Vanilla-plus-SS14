@@ -1,0 +1,155 @@
+- type: radioChannel
+  id: HECUBaseRadio
+  name: Военная
+  keycode: 'й'
+  frequency: 1488
+  color: "#A9A9A9"
+
+- type: entity
+  parent: EncryptionKey
+  id: HECUBaseRadioKey
+  suffix: Eternal
+  name: Ключ Частоты Военных
+  description: Это частота для военных
+  components:
+  - type: EncryptionKey
+    channels:
+    - HECUBaseRadio
+    defaultChannel: HECUBaseRadio
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: sec_label
+
+- type: entity
+  parent: TelecomServer
+  id: TelecomServerHECUBase
+  suffix: Eternal
+  name: Телекоммуникационные сервера
+  components:
+  - type: ContainerFill
+    containers:
+     key_slots:
+      - HECUBaseRadioKey
+
+- type: radioChannel
+  id: HECUCommandRadio
+  name: Командная
+  keycode: 'к'
+  frequency: 1489
+  color: "#fcdf03"
+
+- type: entity
+  parent: EncryptionKey
+  id: HECUCommandRadioKey
+  suffix: Eternal
+  name: Ключ Частоты Командования
+  description: Это частота командования
+  components:
+  - type: EncryptionKey
+    channels:
+    - HECUCommandRadio
+    defaultChannel: HECUCommandRadio
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: cap_label
+
+- type: entity
+  parent: EncryptionKey
+  id: HECUCommandFullRadioKey
+  suffix: Eternal
+  name: Ключ Частоты Полный
+  description: Дает все частоты HECU
+  components:
+  - type: EncryptionKey
+    channels:
+    - HECUCommandRadio
+    - HECUBaseRadio
+    - HECUCargoRadio
+    - HECUArtaRadio
+    defaultChannel: HECUCommandRadio
+  - type: Sprite
+    layers:
+    - state: crypt_gold
+    - state: cap_label
+
+- type: entity
+  parent: TelecomServer
+  id: TelecomServerHECUCommand
+  suffix: Eternal
+  name: Телекоммуникационные сервера
+  components:
+  - type: ContainerFill
+    containers:
+     key_slots:
+      - HECUCommandRadioKey
+
+
+- type: radioChannel
+  id: HECUCargoRadio
+  name: Снабжение
+  keycode: 'с'
+  frequency: 1490
+  color: "#b48b57"
+
+- type: entity
+  parent: EncryptionKey
+  id: HECUCargoRadioKey
+  suffix: Eternal
+  name: Ключ Частоты Снабжения
+  description: Это частота для Снабжения
+  components:
+  - type: EncryptionKey
+    channels:
+    - HECUCargoRadio
+    defaultChannel: HECUCargoRadio
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: cargo_label
+
+- type: entity
+  parent: TelecomServer
+  id: TelecomServerHECUCargo
+  suffix: Eternal
+  name: Телекоммуникационные сервера
+  components:
+  - type: ContainerFill
+    containers:
+     key_slots:
+      - HECUCargoRadioKey
+
+- type: radioChannel
+  id: HECUArtaRadio
+  name: Поддержка
+  keycode: 'е'
+  frequency: 1491
+  color: "#FF69B4"
+
+- type: entity
+  parent: EncryptionKey
+  id: HECUArtaRadioKey
+  suffix: Eternal
+  name: Ключ Частоты Поддержки
+  description: Это частота для Поддержки
+  components:
+  - type: EncryptionKey
+    channels:
+    - HECUArtaRadio
+    defaultChannel: HECUArtaRadio
+  - type: Sprite
+    layers:
+    - state: crypt_gray
+    - state: hop_label
+
+- type: entity
+  parent: TelecomServer
+  id: TelecomServerHECUArta
+  suffix: Eternal
+  name: Телекоммуникационные сервера
+  components:
+  - type: ContainerFill
+    containers:
+     key_slots:
+      - HECUArtaRadioKey

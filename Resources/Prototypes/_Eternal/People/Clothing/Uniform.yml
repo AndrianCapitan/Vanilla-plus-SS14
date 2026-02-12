@@ -9,3 +9,15 @@
     sprite: /Textures/_Eternal/People/Clothing/Uniform/HECU.rsi
   - type: Clothing
     sprite: /Textures/_Eternal/People/Clothing/Uniform/HECU.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformHECULol
+  name: Форма Подразделения HECU
+  suffix: Eternal
+  description: Форма подразделения HECU? Почему тут майка?
+  components:
+  - type: Sprite
+    sprite: /Textures/_Eternal/People/Clothing/Uniform/HECUlol.rsi
+  - type: Clothing
+    sprite: /Textures/_Eternal/People/Clothing/Uniform/HECUlol.rsi

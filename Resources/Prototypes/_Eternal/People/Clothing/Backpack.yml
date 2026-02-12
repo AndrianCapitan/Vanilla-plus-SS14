@@ -41,4 +41,23 @@
   - type: Sprite
     sprite: /Textures/_Eternal/People/Clothing/Back/Backpack/Backlight.rsi
 
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackHightEternalHecu
+  suffix: Eternal
+  name: Вещевой мешок HECU
+  description: Большое хранилище для HECU
+  components:
+  - type: Sprite
+    sprite: /Textures/_Eternal/People/Clothing/Back/Backpack/Backpackhight.rsi
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,7,4
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier  
+
+
   
