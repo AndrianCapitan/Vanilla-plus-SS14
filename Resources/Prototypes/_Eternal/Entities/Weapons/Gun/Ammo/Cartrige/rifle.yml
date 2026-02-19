@@ -1,0 +1,79 @@
+- type: Tag
+  id: EternalCartridgeRifle
+  
+- type: entity
+  abstract: true
+  parent: [ BaseCartridge, BaseSecurityContraband ]
+  id: BaseCartridgeRifleEternal
+  name: патрон (.5,56 автомат)
+  components:
+  - type: Tag
+    tags:
+      - EternalCartridgeRifle
+  - type: CartridgeAmmo
+    proto: EternalBulletRifle
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  parent: BaseCartridgeRifleEternal
+  id: CartridgeRifleEternal
+  name: патрон (.5,56 автомат)
+  description: Современный промежуточный патрон для боевых винтовок. Стандартные кинетические боеприпасы широко распространены и полезны в большинстве ситуаций.
+  components:
+  - type: CartridgeAmmo
+    proto: EternalBulletRifle
+
+
+- type: entity
+  parent: BaseCartridgeRifleEternal
+  id: CartridgeRifleEternalPractice
+  name: патрон (.5,56 автомат Учебный)
+  description: Современный промежуточный патрон для боевых винтовок. Стандартные кинетические боеприпасы широко распространены и полезны в большинстве ситуаций.
+  components:
+  - type: CartridgeAmmo
+    proto: EternalBulletRiflePractice
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#20dc2d"
+
+- type: entity
+  parent: BaseCartridgeRifleEternal
+  id: CartridgeRifleEternalIncendiary
+  name: патрон (.5,56 автомат Зажигательный)
+  description: Современный промежуточный патрон для боевых винтовок. Стандартные кинетические боеприпасы широко распространены и полезны в большинстве ситуаций.
+  components:
+  - type: CartridgeAmmo
+    proto: EternalBulletRifleIncendiary
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#fb8a00"
+
+- type: entity
+  parent: BaseCartridgeRifleEternal
+  id: CartridgeRifleEternalBrone
+  name: патрон (.5,56 автомат Бронебойный)
+  description: Современный промежуточный патрон для боевых винтовок. Стандартные кинетические боеприпасы широко распространены и полезны в большинстве ситуаций.
+  components:
+  - type: CartridgeAmmo
+    proto: EternalBulletRifleBrone
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#d11616"
