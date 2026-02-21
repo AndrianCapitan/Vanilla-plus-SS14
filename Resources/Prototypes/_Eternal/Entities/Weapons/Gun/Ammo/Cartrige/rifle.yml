@@ -44,7 +44,7 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#20dc2d"
+        color: "#dbdbdb"
 
 - type: entity
   parent: BaseCartridgeRifleEternal

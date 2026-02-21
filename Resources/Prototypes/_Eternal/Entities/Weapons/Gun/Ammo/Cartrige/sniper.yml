@@ -1,0 +1,23 @@
+- type: Tag
+  id: EternalCartridgeSniper
+
+- type: entity
+  parent: BaseCartridge
+  id: EternalCartridgeSniper
+  name: патрон (.308 винтовка)
+  description: Это большой и мощный патрон для снайперских винтовок
+  components:
+  - type: Tag
+    tags:
+    - EternalCartridgeSniper
+  - type: CartridgeAmmo
+    proto: EternalBulletSniper
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 20

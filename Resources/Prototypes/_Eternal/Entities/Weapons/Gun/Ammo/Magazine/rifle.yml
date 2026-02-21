@@ -38,7 +38,7 @@
   parent: MagazineRifle
   id: EternalMagazineRifleEmpty
   name: "магазин (.5,56 Пустой)"
-  suffix: empty
+  suffix: Пустой
   description: 30 зарядный магазин на пули калибром 5,56 
   components:
   - type: BallisticAmmoProvider
@@ -92,17 +92,17 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: stripe
-      color: "#20dc2d"
+      color: "#dbdbdb"
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left-mag
       - state: inhand-left-stripe
-        color: "#20dc2d"
+        color: "#dbdbdb"
       right:
       - state: inhand-right-mag
       - state: inhand-right-stripe
-        color: "#20dc2d"
+        color: "#dbdbdb"
 
 - type: entity
   parent: BaseMagazineRifleEternal

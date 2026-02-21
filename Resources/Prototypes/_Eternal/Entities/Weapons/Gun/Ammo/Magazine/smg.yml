@@ -1,0 +1,79 @@
+- type: Tag
+  id: EternalMagazineSMG
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: EternalBaseMagazineSMG  
+  name: магазин ПП (.9x19 авто)
+  components:
+  - type: Tag
+    tags:
+      - EternalMagazineSMG
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - EternalCartridgeSMG
+    capacity: 30
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: EternalBaseMagazineSMG
+  id: EternalMagazineSMG
+  name: магазин ПП (.9x19 авто)
+  description: магазин для МП5
+  components:
+  - type: BallisticAmmoProvider
+    proto: EternalCartridgeSMG
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      right:
+      - state: inhand-right-mag
+
+- type: entity
+  parent: EternalBaseMagazineSMG
+  id: EternalMagazineSMGPractice
+  name: магазин ПП (.9x19 учебный)
+  description: магазин для МП5
+  components:
+  - type: BallisticAmmoProvider
+    proto: EternalCartridgeSMGPractice
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: stripe
+      color: "#dbdbdb"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      right:
+      - state: inhand-right-mag

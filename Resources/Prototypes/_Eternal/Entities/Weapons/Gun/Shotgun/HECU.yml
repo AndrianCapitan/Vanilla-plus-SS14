@@ -1,0 +1,61 @@
+- type: entity
+  name: BaseWeaponShotgun
+  parent: BaseItem
+  id: EternalBaseWeaponShotgun
+  suffix: Eternal, Дробовик
+  description: Бипбип
+  abstract: true
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      map: [ "enum.GunVisualLayers.Base" ]
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,4,0
+  - type: Clothing
+    sprite: /Textures/_Eternal/Objects/Guns/Shotgun/Mosberg.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - EternalShellShotgun
+    capacity: 8
+    proto: ShellShotgun
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  name: Mossberg 500
+  parent: [EternalBaseWeaponShotgun, BaseGunWieldable]
+  id: EternalWeaponShotgunMossenberg500
+  description: A premium semi-automatic shotgun, and the pride of all security forces. Uses .50 shotgun shells.
+  components: # intend for Enforcer to have wider choke for semi-auto function
+  - type: Sprite
+    sprite: /Textures/_Eternal/Objects/Guns/Shotgun/Mosberg.rsi
+  - type: Clothing
+    sprite: /Textures/_Eternal/Objects/Guns/Shotgun/Mosberg.rsi
+  - type: Item
+    sprite: /Textures/_Eternal/Objects/Guns/Shotgun/Mosberg.rsi
+  - type: BallisticAmmoProvider
+  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed

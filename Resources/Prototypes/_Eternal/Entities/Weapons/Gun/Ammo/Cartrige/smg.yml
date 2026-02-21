@@ -1,0 +1,46 @@
+- type: Tag
+  id: EternalCatridgeSMG
+
+- type: entity
+  abstract: true
+  parent: BaseCartridge
+  id: EternalBaseCartridgeSMG
+  name: пуля (.9x19 авто)
+  components:
+  - type: Tag
+    tags:
+      - EternalCatridgeSMG
+  - type: CartridgeAmmo
+    proto: EternalBulletSMG
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  parent: EternalBaseCartridgePistol
+  id: EternalCartridgeSMG
+  name: пуля (.9x19 авто)
+  description: Боеприпасы для пистолета калибром 9x19
+  components:
+  - type: CartridgeAmmo
+    proto: EternalBulletPistol
+
+- type: entity
+  parent: EternalBaseCartridgePistol
+  id: EternalCartridgeSMGPractice
+  name: пуля (.9x19 авто учебные)
+  description: Боеприпасы для пистолета калибром 9x19
+  components:
+  - type: CartridgeAmmo
+    proto: EternalBulletSMGPractice
+  -  type: Sprite
+     layers:
+       - state: base
+         map: [ "enum.AmmoVisualLayers.Base" ]
+       - state: tip
+         map: [ "enum.AmmoVisualLayers.Tip" ]
+         color: "#dbdbdb"

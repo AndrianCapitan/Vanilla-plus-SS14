@@ -1,0 +1,12 @@
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: EternalBulletSniper
+  name: пуля (.308 винтовка)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 75
+  - type: StaminaDamageOnCollide
+    damage: 60
