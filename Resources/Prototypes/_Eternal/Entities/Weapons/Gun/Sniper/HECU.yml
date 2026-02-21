@@ -1,0 +1,78 @@
+- type: entity
+  name: BaseWeaponSniper
+  parent: [BaseItem, BaseGunWieldable]
+  suffix: Eternal, Винтовка
+  id: EternalBaseWeaponSniper
+  description: A rooty tooty point and shooty.
+  abstract: true
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    size: Large
+  - type: Clothing
+    sprite: /Textures/_Eternal/Objects/Guns/Sniper/M110.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 0.75
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: EternalCartridgeSniper
+    whitelist:
+      tags:
+      - EternalCartridgeSniper
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  name: M110
+  parent: EternalBaseWeaponSniper
+  id: EternalWeaponSniperM110
+  description: Снайперская винтовка калибром .308.
+  components:
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,5,1
+  - type: Sprite
+    sprite: /Textures/_Eternal/Objects/Guns/Sniper/M110.rsi
+  - type: Clothing
+    sprite: /Textures/_Eternal/Objects/Guns/Sniper/M110.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 0.4
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - CartridgeAntiMateriel
+    capacity: 5
+    proto: CartridgeAntiMateriel
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.25
+    sprintModifier: 0.25
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 3
+    pvsIncrease: 0.3
+  - type: StaticPrice
+    price: 3500
