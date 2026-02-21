@@ -1,0 +1,21 @@
+- type: entity
+  parent: BaseBullet
+  id: EternalBulletSMG
+  categories: [ HideSpawnMenu ]
+  name: пуля (.9x19 авто)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+
+- type: entity
+  parent: BaseBulletPractice
+  id: EternalBulletSMGPractice
+  categories: [ HideSpawnMenu ]
+  name:  пуля (.9x19 учебный)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2

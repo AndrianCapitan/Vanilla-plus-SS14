@@ -1,0 +1,48 @@
+- type: Tag
+  id: EternalShellShotgun
+
+- type: entity
+  abstract: true
+  parent: BaseCartridge
+  id: EternalBaseShellShotgun
+  name: ружейный патрон (.12)
+  components:
+  - type: Tag
+    tags:
+    - EternalShellShotgun
+  - type: CartridgeAmmo
+    soundEject:
+      collection: ShellEject
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  parent: EternalBaseShellShotgun
+  id: EternalShellShotgun
+  name: ружейный патрон (.12 обычный)
+  description: Стандартный патрон, используемый большинством современных дробовиков. Стандартные кинетические боеприпасы распространены и полезны в большинстве ситуаций.
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: EternalPelletShotgunSpread
+
+- type: entity
+  parent: EternalBaseShellShotgun
+  id: EternalShellShotgunPractice
+  name: ружейный патрон (.12 учебный)
+  description: Учебный патрон, используемый большинством современных дробовиков. Стандартные кинетические боеприпасы распространены и полезны в большинстве ситуаций.
+  components:
+  - type: Sprite
+    layers:
+      - state: practice
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: EternalPelletShotgunPracticeSpread
