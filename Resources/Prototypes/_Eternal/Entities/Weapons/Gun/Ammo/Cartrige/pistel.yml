@@ -1,0 +1,46 @@
+- type: Tag
+  id: EternalCatridgePistol
+
+- type: entity
+  abstract: true
+  parent: BaseCartridge
+  id: EternalBaseCartridgePistol
+  name: пуля (.50 авто)
+  components:
+  - type: Tag
+    tags:
+      - EternalCatridgePistol
+  - type: CartridgeAmmo
+    proto: EternalBulletPistol
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  parent: EternalBaseCartridgePistol
+  id: EternalCartridgePistol
+  name: пуля (.50 авто)
+  description: Боеприпасы для "Пустыного Орла", они достаточно большие...
+  components:
+  - type: CartridgeAmmo
+    proto: EternalBulletPistol
+
+- type: entity
+  parent: EternalBaseCartridgePistol
+  id: EternalCartridgePistolPractice
+  name: пуля (.50 авто учебные)
+  description: Боеприпасы для "Пустыного Орла", они достаточно большие...
+  components:
+  - type: CartridgeAmmo
+    proto: EternalBulletPistolPractice
+  -  type: Sprite
+     layers:
+       - state: base
+         map: [ "enum.AmmoVisualLayers.Base" ]
+       - state: tip
+         map: [ "enum.AmmoVisualLayers.Tip" ]
+         color: "#dbdbdb"

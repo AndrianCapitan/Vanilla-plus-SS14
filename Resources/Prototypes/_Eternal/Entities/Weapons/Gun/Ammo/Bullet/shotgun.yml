@@ -1,0 +1,42 @@
+- type: entity # Одна дробинка
+  parent: BaseBullet
+  id: EternalPelletShotgun
+  categories: [ HideSpawnMenu ]
+  name: дробинка (.12)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+        Structural: 15
+
+- type: entity # Хуйня для кучи дробинок
+  parent: EternalPelletShotgun
+  id: EternalPelletShotgunSpread
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ProjectileSpread
+    proto: EternalPelletShotgun
+    count: 6 # Количество
+    spread: 15 # Наклон (Угол атаки типо)
+
+- type: entity 
+  parent: BaseBullet
+  id: EternalPelletShotgunPractice
+  categories: [ HideSpawnMenu ]
+  name: дробинка (.12)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 3
+
+- type: entity 
+  parent: EternalPelletShotgunPractice
+  id: EternalPelletShotgunPracticeSpread
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ProjectileSpread
+    proto: EternalPelletShotgunPractice
+    count: 6 
+    spread: 15 

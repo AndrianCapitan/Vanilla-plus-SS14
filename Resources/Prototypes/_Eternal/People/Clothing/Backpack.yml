@@ -45,7 +45,7 @@
   parent: ClothingBackpack
   id: ClothingBackpackHightEternalHecu
   suffix: Eternal
-  name: Вещевой мешок HECU
+  name: Тяжелый рюкзак
   description: Большое хранилище для HECU
   components:
   - type: Sprite
@@ -61,3 +61,4 @@
 
 
   
+
