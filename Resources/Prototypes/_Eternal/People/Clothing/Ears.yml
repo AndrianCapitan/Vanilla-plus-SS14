@@ -4,6 +4,7 @@
   suffix: Eternal
   abstract: true
   name: quartermaster's over-ear headset
+  description: Гарнитура связи для HECU
   components:
   - type: Sprite
     sprite: /Textures/_Eternal/People/Clothing/Ears/HECU.rsi
