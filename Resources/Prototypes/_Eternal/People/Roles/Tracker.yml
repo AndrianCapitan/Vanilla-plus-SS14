@@ -1,0 +1,47 @@
+- type: playTimeTracker
+  id: EternalJobAll
+
+- type: playTimeTracker #Команд состав
+  id: EternalJobCommanderOperation
+
+- type: playTimeTracker
+  id: EternalJobCommandOperator
+
+- type: playTimeTracker
+  id: EternalJobCommandKommisar
+
+- type: playTimeTracker
+  id: EternalJobCommandTroop
+
+- type: playTimeTracker
+  id: EternalJobLogistKM
+
+- type: playTimeTracker #Карго
+  id: EternalJobLogist 
+
+- type: playTimeTracker
+  id: EternalJobCargotech
+
+- type: playTimeTracker #Пехотинцы
+  id: EternalJobTroopSpesialist
+
+- type: playTimeTracker
+  id: EternalJobTroopOperator
+
+- type: playTimeTracker
+  id: EternalJobTroopEngineer
+
+- type: playTimeTracker
+  id: EternalJobTroopMedic
+
+- type: playTimeTracker
+  id: EternalJobTrooper
+
+- type: playTimeTracker #Поддержка
+  id: EternalJobHelpingArta
+
+- type: playTimeTracker
+  id: EternalJobHelpingMedic
+
+- type: playTimeTracker
+  id: EternalJobHelpingEnginner

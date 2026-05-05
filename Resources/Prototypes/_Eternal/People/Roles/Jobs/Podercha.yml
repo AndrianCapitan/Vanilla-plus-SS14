@@ -1,0 +1,69 @@
+- type: startingGear
+  id: JobHECUPodArta
+  equipment:
+    jumpsuit: ClothingUniformHECUSolder
+    shoes: ClothingShoesEternalHECU
+    gloves: ClothingHandHecuVoen
+    id: HECUIDcardPodArta
+    ears: ClothingHeadsetEternalHECUArta
+    back: ClothingBackpackSatchelEternalHECU
+    head: ClothingHeadHecuKaska1
+    
+- type: job
+  id: HECUPodArta
+  name: Артиллерист
+  description: Вы артиллерист. Ваша задача огневая поддержка морпехов. Помогайте чем сможете.
+  playTimeTracker: EternalJobHelpingArta
+  setPreference: false
+  startingGear: JobHECUArta
+  icon: JobIconHECUArtPod
+  supervisors: Оператор
+  canBeAntag: false
+  weight: 930
+
+- type: startingGear
+  id: JobHECUPodEng
+  equipment:
+    jumpsuit: ClothingUniformHECUSolder
+    shoes: ClothingShoesEternalHECU
+    gloves: ClothingHandHecuVoen
+    id: HECUIDcardPodEng
+    ears: ClothingHeadsetEternalHECUArta
+    back: ClothingBackpackSatchelEternalHECU
+    head: ClothingHeadHecuKaska1
+    
+- type: job
+  id: HECUPodEnginer
+  name: Инженер
+  description: Вы сапер. Ваша задача техническая поддержка морпехов. Помогайте чем сможете.
+  playTimeTracker: EternalJobHelpingEnginner
+  setPreference: false
+  startingGear: JobHECUPodEng
+  icon: JobIconHECUEng
+  supervisors: Оператор
+  canBeAntag: false
+  weight: 930
+
+
+- type: startingGear
+  id: JobHECUPodMedic
+  equipment:
+    jumpsuit: ClothingUniformHECUSolder
+    shoes: ClothingShoesEternalHECU
+    gloves: ClothingHandHecuVoen
+    id: HECUIDcardPodMedic
+    ears: ClothingHeadsetEternalHECUArta
+    back: ClothingBackpackSatchelEternalHECU
+    head: ClothingHeadHecuKaskaMed
+    
+- type: job
+  id: HECUPodMedic
+  name: Полевой Врач
+  description: Вы инженер. Ваша задача техническая поддержка морпехов. Помогайте чем сможете.
+  playTimeTracker: EternalJobHelpingMedic
+  setPreference: false
+  startingGear: JobHECUPodMedic
+  icon: JobIconHECUParam
+  supervisors: Оператор
+  canBeAntag: false
+  weight: 930

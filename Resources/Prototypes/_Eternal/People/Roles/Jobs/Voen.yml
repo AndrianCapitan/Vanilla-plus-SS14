@@ -1,0 +1,145 @@
+#Военные отряды
+
+- type: startingGear
+  id: JobHECUSolder
+  equipment:
+    jumpsuit: ClothingUniformHECUSolder
+    shoes: ClothingShoesEternalHECU
+    gloves: ClothingHandHecuVoen
+    belt: ClothingBeltWebbingEternalHECU
+    id: HECUIDcardMarin
+    ears: ClothingHeadsetEternalHECU
+    back: ClothingBackpackSatchelEternalHECU
+    head: ClothingHeadHecuKaska1
+    
+- type: job
+  id: HECUSolder
+  name: Солдат отряда HECU
+  description: Вы боец HECU. Ваша задача противостоять внеземнной угрозе, слушайте командира и исполняйте приказы!
+  playTimeTracker: EternalJobTrooper
+  setPreference: false
+  startingGear: JobHECUSolder
+  icon: JobIconHECUSolder
+  supervisors: Команидр Отряда
+  canBeAntag: false
+  weight: 930
+
+- type: startingGear
+  id: JobHECUMedic
+  equipment:
+    jumpsuit: ClothingUniformHECUSolder
+    shoes: ClothingShoesEternalHECU
+    gloves: ClothingHandHecuVoen
+    belt: ClothingBeltWebbingEternalHECU
+    id: HECUIDcardMedic
+    ears: ClothingHeadsetEternalHECU
+    back: ClothingBackpackSatchelEternalHECU
+    head: ClothingHeadHecuKaskaMed
+
+- type: job
+  id: HECUMedic
+  name: Медик отряда HECU
+  description: Вы полевой медик HECU. Ваша задача лечить морпехов в полевых условиях, слушайте командира и исполняйте приказы!
+  playTimeTracker: EternalJobTroopMedic
+  setPreference: false
+  startingGear: JobHECUMedic
+  icon: HECUMedicPol
+  supervisors: Команидр Отряда
+  canBeAntag: false
+  weight: 930
+
+- type: startingGear
+  id: JobHECUSaper
+  equipment:
+    jumpsuit: ClothingUniformHECUSolder
+    shoes: ClothingShoesEternalHECU
+    gloves: ClothingHandHecuVoen
+    belt: ClothingBeltUtilityEngineering
+    id: HECUIDcardSaper
+    ears: ClothingHeadsetEternalHECU
+    back: ClothingBackpackSatchelEternalHECU
+    head: ClothingHeadHecuKaska1
+
+- type: job
+  id: HECUSaper
+  name: Сапер отряда HECU
+  description: Вы сапер HECU. Ваша задача строить укрепления и проводить инженерну подготовку, слушайте командира и исполняйте приказы!
+  playTimeTracker: EternalJobTroopEngineer
+  setPreference: false
+  startingGear: JobHECUSaper
+  icon: JobIconHECUSaper
+  supervisors: Команидр Отряда
+  canBeAntag: false
+  weight: 930
+
+- type: startingGear
+  id: JobHECUOper
+  equipment:
+    jumpsuit: ClothingUniformHECUSolder
+    shoes: ClothingShoesEternalHECU
+    gloves: ClothingHandHecuVoen
+    belt: ClothingBeltWebbingEternalHECU
+    id: HECUIDcardSaper
+    ears: ClothingHeadsetEternalHECUOper
+    back: ClothingBackpackSatchelEternalHECU
+    head: ClothingHeadHecuKaska1
+
+- type: job
+  id: HECUOper
+  name: Связист отряда HECU
+  description: Вы связист HECU. Ваша задача поддерживать связь и помогать командиру, слушайте командира и исполняйте приказы!
+  playTimeTracker: EternalJobTroopOperator
+  setPreference: false
+  startingGear: JobHECUSaper
+  icon: JobIconHECUSvis
+  supervisors: Команидр Отряда
+  canBeAntag: false
+  weight: 930
+
+- type: startingGear
+  id: JobHECUTroopSpec
+  equipment:
+    jumpsuit: ClothingUniformHECUSolder
+    shoes: ClothingShoesEternalHECU
+    gloves: ClothingHandHecuVoen
+    belt: ClothingBeltWebbingEternalHECU
+    id: HECUIDcardSpes
+    ears: ClothingHeadsetEternalHECU
+    back: ClothingBackpackSatchelEternalHECU
+    head: ClothingHeadHecuKaska1
+
+- type: job
+  id: HECUTroopSpec
+  name: Специалист отряда HECU
+  description: Вы специалист отряда HECU. Вы главная боевая мощь отряда, помогайте товарища, слушайте командира отряда.
+  playTimeTracker: EternalJobTroopSpesialist
+  setPreference: false
+  startingGear: JobHECUTroopSpec
+  icon: JobIconHECUSpec
+  supervisors: Команидр Отряда
+  canBeAntag: false
+  weight: 930
+
+- type: startingGear
+  id: JobHECUTroopCom
+  equipment:
+    jumpsuit: ClothingUniformHECUSolder
+    shoes: ClothingShoesEternalHECU
+    gloves: ClothingHandHecuVoen
+    belt: ClothingBeltWebbingEternalHECU
+    id: HECUIDcardCom
+    ears: ClothingHeadsetEternalHECUOper
+    back: ClothingBackpackSatchelEternalHECU
+    head: ClothingHeadHecuKaska1
+
+- type: job
+  id: HECUTroopCom
+  name: Командир отряда HECU
+  description: Вы командир отряда HECU. Ваша задача использовать свой отряд для выполнения боевой миссии! Слушайте Командира Операции.
+  playTimeTracker: EternalJobCommandTroop
+  setPreference: false
+  startingGear: JobHECUTroopCom
+  icon: JobIconHECUCommand
+  supervisors: Оператор
+  canBeAntag: false
+  weight: 930

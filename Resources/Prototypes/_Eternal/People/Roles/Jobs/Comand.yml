@@ -1,0 +1,65 @@
+- type: startingGear
+  id: JobHECUOperator
+  equipment:
+    jumpsuit: ClothingUniformHECUSolder
+    shoes: ClothingShoesEternalHECU
+    gloves: ClothingHandHecuVoen
+    id: HECUIDcardOperator
+    ears: ClothingHeadsetEternalHECUCommand
+    back: ClothingBackpackSatchelEternalHECU
+    
+- type: job
+  id: HECUComOperator
+  name: Оператор
+  description: Вы оператор. Ваши задачи передача приказов и организация своей мини армии, для эффективных боевых действий.
+  playTimeTracker: EternalJobCommandOperator
+  setPreference: false
+  startingGear: JobHECUOperator
+  icon: JobIconHECUOper
+  supervisors: Командир Операции
+  canBeAntag: false
+  weight: 930
+
+- type: startingGear
+  id: JobHECUComKommisar
+  equipment:
+    jumpsuit: ClothingUniformHECUSolder
+    shoes: ClothingShoesEternalHECU
+    gloves: ClothingHandHecuVoen
+    id: HECUIDcardKommisar
+    ears: ClothingHeadsetEternalHECUCommand
+    back: ClothingBackpackSatchelEternalHECU
+    
+- type: job
+  id: HECUComKommisar
+  name: Коммисар
+  description: Вы коммисар. Ваша задача поддерживать дисциплину, используйте методы, которые считаете эффективными.
+  playTimeTracker: EternalJobCommandKommisar
+  setPreference: false
+  startingGear: JobHECUComKommisar
+  icon: JobIconHECUKom
+  supervisors: Командир Операции
+  canBeAntag: false
+  weight: 930
+
+- type: startingGear
+  id: JobHECUComOperation
+  equipment:
+    jumpsuit: ClothingUniformHECUSolder
+    shoes: ClothingShoesEternalHECU
+    gloves: ClothingHandHecuVoen
+    id: HECUIDcardComOperation
+    ears: ClothingHeadsetEternalHECUCommand
+    back: ClothingBackpackSatchelEternalHECU
+    
+- type: job
+  id: HECUComOperation
+  name: Командир Операции
+  description: Вы глава операции. Командуйте своими силами и достигните победы!
+  playTimeTracker: EternalJobCommanderOperation
+  setPreference: false
+  startingGear: JobHECUComOperation
+  icon: JobIconHECUComOperation
+  supervisors: Оперативный штаб
+  canBeAntag: false
+  weight: 930

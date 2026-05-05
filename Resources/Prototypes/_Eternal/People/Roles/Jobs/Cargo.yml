@@ -1,0 +1,62 @@
+- type: startingGear
+  id: JobHECUCargo
+  equipment:
+    jumpsuit: ClothingUniformHECULol
+    shoes: ClothingShoesEternalHECU
+    id: HECUIDcardCargo
+    ears: ClothingHeadsetEternalHECUCargo
+    back: ClothingBackpackSatchelEternalHECU
+    
+- type: job
+  id: HECUCargo
+  name: Логист
+  description: Вы логист HECU, ваша задача обеспечить средствами данную операцию.
+  playTimeTracker: EternalJobLogist
+  setPreference: false
+  startingGear: JobHECUCargo
+  icon: JobIconHECUCargo
+  supervisors: Квартирмейстер
+  canBeAntag: false
+  weight: 930
+
+- type: startingGear
+  id: JobHECUCargoTech
+  equipment:
+    jumpsuit: ClothingUniformHECULol
+    shoes: ClothingShoesEternalHECU
+    id: HECUIDcardCargoTech
+    ears: ClothingHeadsetEternalHECUCargo
+    back: ClothingBackpackSatchelEternalHECU
+    
+- type: job
+  id: HECUCargoTech
+  name: Карготехник
+  description: Вы карготехник HECU, помогайте логистам и обеспечьте снабжение.
+  playTimeTracker: EternalJobCargotech
+  setPreference: false
+  startingGear: JobHECUCargoTech
+  icon: JobIconHECUCargo
+  supervisors: Квартирмейстер
+  canBeAntag: false
+  weight: 930
+
+- type: startingGear
+  id: JobHECUKM
+  equipment:
+    jumpsuit: ClothingUniformHECULol
+    shoes: ClothingShoesEternalHECU
+    id: HECUIDcardKM
+    ears: ClothingHeadsetEternalHECUKM
+    back: ClothingBackpackSatchelEternalHECU
+    
+- type: job
+  id: HECUKM
+  name: Квартирмейстер
+  description: Вы квартирмейстер, командуйте поставками и помогите морпехам победить.
+  playTimeTracker: EternalJobLogistKM
+  setPreference: false
+  startingGear: JobHECUKM
+  icon: JobIconHECUCargoCom
+  supervisors: Оператор
+  canBeAntag: false
+  weight: 930

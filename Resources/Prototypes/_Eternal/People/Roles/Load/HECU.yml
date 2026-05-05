@@ -1,0 +1,237 @@
+- type: entity
+  parent: Clothing
+  id: IDCardHECUStandart
+  name: Жетон Морпеха
+  description: Жетон морпеха на котором написанная информация
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: /Textures/_Eternal/Objects/IDcard.rsi
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: /Textures/_Eternal/Objects/IDcard.rsi
+  - type: Item
+    size: Small
+    heldPrefix: default
+    storedRotation: -90
+  - type: Access
+  - type: IdCard
+  - type: StationRecordKeyStorage
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - WhitelistChameleon
+    - WhitelistChameleonIdCard
+  - type: StealTarget
+    stealGroup: IDCard
+
+- type: entity # Морпехи
+  parent: IDCardHECUStandart
+  id: HECUIDcardMarin
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUSolder
+
+- type: entity 
+  parent: IDCardHECUStandart
+  id: HECUIDcardMedic
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUMedic
+
+- type: entity
+  parent: IDCardHECUStandart
+  id: HECUIDcardSaper
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUSaper
+
+- type: entity
+  parent: IDCardHECUStandart
+  id: HECUIDcardOper
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUOper
+
+- type: entity
+  parent: IDCardHECUStandart
+  id: HECUIDcardSpes
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUTroopSpec
+
+- type: entity
+  parent: IDCardHECUStandart
+  id: HECUIDcardCom
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUTroopCom
+
+- type: entity # Карго
+  parent: IDCardHECUStandart
+  id: HECUIDcardCargo
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUCargo
+
+- type: entity
+  parent: IDCardHECUStandart
+  id: HECUIDcardCargoTech
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUCargoTech
+
+- type: entity
+  parent: IDCardHECUStandart
+  id: HECUIDcardKM
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUCargoTech
+
+- type: entity #Командование
+  parent: IDCardHECUStandart
+  id: HECUIDcardOperator
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUComOperator
+
+- type: entity 
+  parent: IDCardHECUStandart
+  id: HECUIDcardKommisar
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUComKommisar
+
+- type: entity 
+  parent: IDCardHECUStandart
+  id: HECUIDcardComOperation
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUComOperation
+
+- type: entity 
+  parent: IDCardHECUStandart
+  id: HECUIDcardPodArta
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUPodArta
+  
+- type: entity 
+  parent: IDCardHECUStandart
+  id: HECUIDcardPodEng
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUPodEnginer
+
+- type: entity 
+  parent: IDCardHECUStandart
+  id: HECUIDcardPodMedic
+  name: Жетон
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+      offset: -0.09375, 0.0625 
+      state: Pysto
+  - type: PresetIdCard
+    job: HECUPodMedic
