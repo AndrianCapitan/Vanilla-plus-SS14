@@ -1,0 +1,113 @@
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUCommand
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUCommand 
+  jobName: Команидр Отряда
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUMedicPol
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUMedicPol 
+  jobName: Врач Отряда
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUCargo
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUCargo 
+  jobName: Логист
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUCargoCom
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUCargoCom 
+  jobName: Глава Логистики
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUEng
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUEng 
+  jobName: Инженер
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUKom
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUKom 
+  jobName: Комиссар
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUOper
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUOper 
+  jobName: Оператор
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUSaper
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUSaper 
+  jobName: Сапер
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUSolder
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUSolder 
+  jobName: Солдат
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUParam
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUParam 
+  jobName: Полевой врач
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUSvis
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUSvis 
+  jobName: Связист отряда
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUSpec
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUSpec 
+  jobName: Специалист отряда
+
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUComOperation
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUComOperation 
+  jobName: Командир Операции
+
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHECUArtPod
+  icon:
+    sprite: /Textures/_Eternal/Misc/Interface/job_icons.rsi
+    state: HECUArtPod 
+  jobName: Артилерист
